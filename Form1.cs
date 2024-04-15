@@ -38,7 +38,8 @@ namespace env_symlink
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0)
+            if (e.RowIndex >= 0 & e.ColumnIndex >= 0)
+
             {
                 DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
                 string cellValue = row.Cells[e.ColumnIndex].Value.ToString();
